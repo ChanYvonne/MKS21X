@@ -12,3 +12,4 @@ git add filename_1 filename_2 adds multiple files to the staging area
 git remote add origin [URL] sets the new remote(used when trying to push)
 git remote -v verifies the new remote URL
 git push origin master pushes the changes in local directory up to remote repository that was set
+some change
