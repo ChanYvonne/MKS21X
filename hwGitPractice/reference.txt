@@ -9,3 +9,6 @@ git checkout HEAD filename: Discards changes in the working directory.
 git reset HEAD filename: Unstages file changes in the staging area.
 git reset SHA: Can be used to reset to a previous commit in your commit history.
 git add filename_1 filename_2 adds multiple files to the staging area
+git remote add origin [URL] sets the new remote(used when trying to push)
+git remote -v verifies the new remote URL
+git push origin master pushes the changes in local directory up to remote repository that was set
