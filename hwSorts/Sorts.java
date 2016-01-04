@@ -21,6 +21,21 @@ public class Sorts{
 	}
     }
 
+    public static void selectionSort(int[] data){
+	int startIndex = 0;
+	int value = 0;
+	while (startIndex < data.length - 1){
+	    value = data[startIndex];
+	    for (int x = startIndex; x < data.length;x++){
+		if (value > data[x]){
+		    value = data[x];
+		}
+	    }
+	    data[startIndex] = value;
+	    startIndex ++;
+	}
+    }
+
     public static void printArray(int[]data){
         String ans = "";
 	for (int x = 0; x < data.length-1; x ++){
