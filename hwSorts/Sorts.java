@@ -23,16 +23,20 @@ public class Sorts{
 
     public static void selectionSort(int[] data){
 	int startIndex = 0;
+	int switchIndex = 0;
 	int value = 0;
-	while (startIndex < data.length - 1){
+	while (startIndex < data.length){
 	    value = data[startIndex];
 	    for (int x = startIndex; x < data.length;x++){
 		if (value > data[x]){
 		    value = data[x];
+		    switchIndex = x;
 		}
 	    }
+	    data[switchIndex] = data[startIndex];
 	    data[startIndex] = value;
 	    startIndex ++;
+	    value = 0;
 	}
     }
 
