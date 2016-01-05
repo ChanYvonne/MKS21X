@@ -8,8 +8,8 @@ public class Sorts{
 	    value = data[nextIndex];
 	    if (value < data[nextIndex-1]){
 		while (nextIndex > 0 && data[nextIndex-1] > value){
-			nextIndex--;
-			shift++;
+		    nextIndex--;
+		    shift++;
 		}
 		for (int x = nextIndex + shift; x > nextIndex; x--){
 		    data[x] = data[x-1];
@@ -37,6 +37,29 @@ public class Sorts{
 	    data[startIndex] = value;
 	    startIndex ++;
 	    value = 0;
+	}
+    }
+
+    public static void bubbleSort(int[]data){
+	int value = 0;
+	int endIndex = data.length;
+	boolean change = false;
+	boolean stop = false;
+	while (endIndex > 0 || stop == false){
+	    for (int x = 0; x < endIndex-1; x++){
+		value = data[x];
+		if (data[x] > data[x+1]){
+		    data[x] = data[x+1];
+		    data[x+1] = value;
+		    change = true;
+		}
+		value = 0;
+	    }
+	    endIndex --;
+	    if (change == false){
+		stop = true;
+	    }
+	    change = false;
 	}
     }
 
