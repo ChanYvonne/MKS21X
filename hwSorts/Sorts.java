@@ -65,6 +65,12 @@ public class Sorts{
 	    change = false;
 	}
     }
+    
+    public static void fillWithRandom(int[]data){
+	for (int x = 0; x < data.length; x++){
+	    data[x] = Math.random()*Integer.MAX_VALUE;
+	}
+    }
 
     public static void printArray(int[]data){
         String ans = "";
