@@ -16,6 +16,7 @@ public class Sorts{
 		}
 		data[nextIndex] = value;
 		shift = 0;
+		printArray(data);
 	    }
 	    nextIndex++;
 	}
@@ -33,6 +34,7 @@ public class Sorts{
 		    switchIndex = x;
 		}
 	    }
+	    printArray(data);
 	    data[switchIndex] = data[startIndex];
 	    data[startIndex] = value;
 	    startIndex ++;
@@ -55,6 +57,7 @@ public class Sorts{
 		}
 		value = 0;
 	    }
+	    printArray(data);
 	    endIndex --;
 	    if (change == false){
 		stop = true;
