@@ -16,7 +16,7 @@ public class Sorts{
 		}
 		data[nextIndex] = value;
 		shift = 0;
-		printArray(data);
+		//printArray(data);
 	    }
 	    nextIndex++;
 	}
@@ -34,7 +34,7 @@ public class Sorts{
 		    switchIndex = x;
 		}
 	    }
-	    printArray(data);
+	    //printArray(data);
 	    data[switchIndex] = data[startIndex];
 	    data[startIndex] = value;
 	    startIndex ++;
@@ -57,7 +57,7 @@ public class Sorts{
 		}
 		value = 0;
 	    }
-	    printArray(data);
+	    //printArray(data);
 	    endIndex --;
 	    if (change == false){
 		stop = true;
@@ -66,9 +66,9 @@ public class Sorts{
 	}
     }
     
-    public static void fillWithRandom(int[]data){
+    public static void fillRandom(int[]data){
 	for (int x = 0; x < data.length; x++){
-	    data[x] = Math.random()*Integer.MAX_VALUE;
+	    data[x] = (int)Math.random()*Integer.MAX_VALUE;
 	}
     }
 
